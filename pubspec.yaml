@@ -23,6 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cached_network_image:
+  json_annotation:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -44,10 +46,15 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/sample-image1.jpeg
+    - assets/sample-image2.jpeg
+    - assets/sample-image3.jpeg
+    - assets/sample-image4.jpeg
+    - assets/sample-image5.jpeg
+    - assets/sample-image6.jpeg
+    - assets/sample-image7.jpeg
+    - assets/sample-image8.jpeg
 
   fonts:
     - family: Roboto

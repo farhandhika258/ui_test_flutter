@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_ui_test/select_topic_page.dart';
 import 'package:flutter_app_ui_test/size_config.dart';
 
 void main() {
@@ -131,7 +132,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               fontSize: 20
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          _goToSelectTopic();
+                        },
                         shape: RoundedRectangleBorder(borderRadius: new BorderRadius.circular(3.0))
                     ),
                   ),
@@ -173,4 +176,10 @@ class _MyHomePageState extends State<MyHomePage> {
         )
     );
   }
+   _goToSelectTopic() {
+     Navigator.push(
+       context,
+       MaterialPageRoute(builder: (context) => SelectTopicPage()),
+     );
+   }
 }
